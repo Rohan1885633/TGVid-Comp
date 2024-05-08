@@ -23,7 +23,7 @@ async def Handle_StartMsg(bot:Client, msg:Message):
         botusername = await bot.get_me()
         btn = [
             [InlineKeyboardButton(text='⚡ BOT PM', url=f'https://t.me/{botusername.username}')],
-            [InlineKeyboardButton(text='💻 Dᴇᴠᴇʟᴏᴘᴇʀ', url='https://t.me/Snowball_Official')]
+            [InlineKeyboardButton(text='💻 Dᴇᴠᴇʟᴏᴘᴇʀ', url='https://t.me/')]
         ]
 
         await Snowdev.edit(text=Txt.GROUP_START_MSG.format(msg.from_user.mention), reply_markup=InlineKeyboardMarkup(btn))
